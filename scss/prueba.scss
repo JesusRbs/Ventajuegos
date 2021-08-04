@@ -1,0 +1,234 @@
+/*
+Tipografias
+font-family: "Fjalla One", sans-serif;
+font-family: "Mavens Pro", sans-serif;
+font-family: "Noto Sans JP", sans-serif;
+*/
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Maven Pro", sans-serif;
+}
+
+$plataformas: (
+  xbox: #0e7a0d,
+  playstation: #2151a1,
+  steam: #021d34,
+);
+
+
+@each $none, $color in $plataformas {
+  .fa-#{$none} {
+    color: $color;
+  }
+}
+
+li {
+  a {
+    text-decoration: none;
+  }
+  list-style: none;
+}
+.fondo {
+  background-color: #2a9d8f;
+}
+p {
+  font-size: 20px;
+  text-align: justify;
+  word-spacing: 1.5px;
+  line-height: 130%;
+}
+.presentacion--producto {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 1.3rem;
+  margin: 1.7rem 1.4rem 1.7rem 1.4rem;
+  padding: 0.6rem 0.4rem 0.6rem 0.4rem;
+  width: 32.2rem;
+  height: auto;
+  border: solid 2px white;
+  .presentacion__img {
+    height: 17.5rem;
+    width: auto;
+  }
+  .presentacion__titulo--uppercase {
+    text-transform: uppercase;
+    color: brown;
+  }
+}
+
+.encabezado {
+  div {
+    background-color: #264653;
+  }
+  nav {
+    padding: 0;
+  }
+}
+ul {
+  li {
+    background-color: none;
+    transition: background-color 0.5s;
+    &:hover {
+      background-color: #474b4e;
+    }
+  }
+}
+.menu {
+  font: 28px "Fjalla One", sans-serif;
+  text-transform: uppercase;
+  margin-right: 1rem;
+}
+.titulo {
+  background-image: linear-gradient(to bottom, #e9c46a, pink);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border: solid 4px black;
+  width: 500px;
+  padding-bottom: 25px;
+  padding-top: 25px;
+}
+nav {
+  li {
+    border: solid 3px black;
+    border-radius: 5px;
+    padding: 1rem 2rem;
+    margin-right: 5px;
+  }
+}
+section {
+  background-image: linear-gradient(to left, #e9c46a, pink);
+}
+.especial {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+h4 {
+  text-align: center;
+  word-spacing: 1px;
+  line-height: 250%;
+}
+h2 {
+  font-family: "Noto Sans JP", sans-serif;
+  color: #dc2f02;
+  font-size: 24px;
+}
+
+footer {
+  font: 28px "Fjalla One", sans-serif;
+  background-color: #e76f51;
+}
+.redes--estructura {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: aliceblue;
+  font-size: 45px;
+}
+.redes__facebook--colorblue {
+  color: #3b5998;
+}
+.redes__twitter--colorlightblue {
+  color: #00acee;
+}
+.redes__instagram--colororange {
+  color: orangered;
+}
+
+.contacto {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr;
+  margin-top: 2rem;
+  margin-left: 1rem;
+}
+div {
+  h3 {
+    font-weight: 300;
+  }
+}
+#informacion {
+  display: grid;
+  grid-template-columns: 2fr 7fr;
+  gap: 10px;
+  margin: 2rem 1rem 0rem 1rem;
+}
+.dr {
+  width: 25rem;
+}
+.info {
+  background: none;
+
+  div {
+    width: 700px;
+    height: auto;
+    img {
+      margin-top: 1rem;
+      width: 500px;
+      height: auto;
+    }
+  }
+}
+@media only screen and (min-width: 768px) {
+  .info div {
+    width: auto;
+  }
+  p {
+    font-size: 12px;
+  }
+  .titulo {
+    margin: 2.5% auto 2.5% auto;
+  }
+  .encabezado {
+    width: 100%;
+  }
+  section {
+    margin: 50px 84px 50px 84px;
+    width: 600px;
+  }
+  .piePagina {
+    width: 100%;
+  }
+
+  .bottom {
+    margin: 1.5rem;
+  }
+
+  .dr {
+    width: 94%;
+  }
+  .bottom {
+    width: 20rem;
+    height: 3rem;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  p {
+    font-size: 22px;
+  }
+
+  section {
+    width: auto;
+  }
+  .bottom {
+    width: 25rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .presentador {
+    width: 90%;
+    height: auto;
+    margin: 40px auto 40px auto;
+  }
+  article {
+    margin-left: 20px;
+  }
+  .especial {
+    width: 85%;
+    height: auto;
+    margin: 40px auto 40px auto;
+    article {
+      margin: 30px 10px 30px 10px;
+    }
+  }
+}
